@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZenithProxy 配置中心</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="//sdk.51.la/js-sdk-pro.min.js" id="LA_COLLECT"></script>
+<script>LA.init({id:"3Ny1uac0PW8pSlg2",ck:"3Ny1uac0PW8pSlg2",autoTrack:true,screenRecord:true})</script>
+</head>
+<body>
+
+
+<!-- 顶栏 -->
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">ZP</span>
+    <div class="brand-txt">
+      <h1>ZenithProxy 配置中心</h1>
+      <span class="brand-sub">Config Tree · v5</span>
+    </div>
+  </div>
+  <div class="view-switch" title="视图切换">
+    <button id="viewToggleBasic" class="active" role="tab">基础</button>
+    <button id="viewToggleAdv" role="tab">高级</button>
+  </div>
+  <div class="top-actions">
+    <a class="btn ghost" href="/" title="返回博客首页">博客首页</a>
+    <button class="btn" id="btnExpandAll" title="展开所有模块（父开关关闭的除外）">▾ 全部展开</button>
+    <button class="btn" id="btnCollapseAll" title="折叠所有模块">▴ 全部折叠</button>
+    <button class="btn ghost" id="btnTheme" title="切换深浅色">☀</button>
+    <button class="btn" id="btnLoadLocal">载入本地</button>
+    <button class="btn" id="btnRestore">恢复默认</button>
+    <span id="dirtyDot" class="dirty-dot" style="display:none" title="有未保存的修改">● 未保存</span>
+    <button class="btn primary" id="btnDownload">⬇ 下载 config.json</button>
+  </div>
+</header>
+
+<div id="view-advanced" style="display:none">
+<div class="layout">
+  <!-- 左侧导航 -->
+  <aside class="sidenav">
+    <div class="nav-title">CONFIG TREE</div>
+    <nav id="navList"></nav>
+    <div class="nav-sep"></div>
+    <button class="nav-item" id="navJson" data-nav="json"><span class="nav-no">99</span>原始 JSON</button>
+  </aside>
+
+  <!-- 主区 -->
+  <main class="content">
+    <div class="intro">
+      <div class="it">ZenithProxy · Configuration Reference</div>
+      <p>按 <code>config.json</code> 原始层级组织，共 <b id="totalCount">0</b> 个字段。父开关关闭的模块自动收起子项；点击模块标题可手动展开/折叠。修改后点「下载 config.json」覆盖项目目录并重启生效。</p>
+      <p>本页面中的项目都可以在这里配置；详细功能请前往 <a href="https://github.com/rfresh2/ZenithProxy" target="_blank" rel="noopener">ZenithProxy 官网</a> 了解。</p>
+    </div>
+    <div id="chapters"></div>
+
+    <!-- 原始 JSON -->
+    <section class="chapter" id="chapter-json">
+      <div class="chapter-head" data-fold="chapter-json">
+        <span class="caret">▾</span>
+        <h2>原始 JSON</h2>
+        <span class="sec-key">config.json</span>
+        <span class="sec-count">RAW</span>
+      </div>
+      <div class="chapter-body">
+        <div class="json-actions">
+          <button class="btn" id="btnJsonFromForm">从表单生成</button>
+          <button class="btn" id="btnJsonToForm">解析回填表单</button>
+        </div>
+        <div class="json-shell">
+          <div class="json-bar">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="fname">config.json</span>
+          </div>
+          <textarea id="jsonEditor" spellcheck="false"></textarea>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+</div>
+
+<!-- 基础视图（首页） -->
+<div id="view-basic" style="display:none"></div>
+
+<!-- 状态栏 -->
+<footer class="statusbar">
+  <span class="item"><span class="dot"></span><b id="stSrc">DEFAULT</b></span>
+  <span class="item">config.json</span>
+  <span class="spacer"></span>
+  <span class="item">字段 <b id="stFields">0</b></span>
+  <span class="item">大块 <b id="stChapters">0</b></span>
+  <span class="item"><b id="stTheme">DARK</b></span>
+</footer>
+
+<div id="toast"></div>
+<input type="file" id="fileInput" accept=".json,application/json" hidden>
+
+
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

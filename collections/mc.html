@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://www.yunyoujun.cn/favicon.svg">
+    <script>
+    ;(function () {
+      const prefersDark =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+    </script>
+  <style type="text/css">
+    :root { color-scheme: light dark; --va-c-bg: #fff; }
+    html.dark { --va-c-bg: #000; }
+    html { background-color: var(--va-c-bg); }
+  </style><style id="valaxy-fouc">body{opacity:0!important}</style><style>body{transition:opacity .15s ease}</style><noscript><style>body{opacity:1!important}</style></noscript><script>(function foucGuardScript(maxDuration) {
+  var done = 0;
+  function reveal() {
+    if (done) return;
+    done = 1;
+    var s = document.getElementById("valaxy-fouc");
+    if (s) s.remove();
+  }
+  function check() {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (!links[i].sheet) return;
+    }
+    reveal();
+  }
+  new MutationObserver(check).observe(document.head, {
+    childList: true,
+    attributes: true,
+    attributeFilter: ["media", "rel"]
+  });
+  addEventListener("load", reveal);
+  if (maxDuration)
+    setTimeout(reveal, maxDuration);
+})(5000)</script>
+    <script>
+    const locale = localStorage.getItem('valaxy-locale') || 'zh-CN';
+    document.documentElement.setAttribute('lang', locale);
+    </script>
+    
+  <script type="module" crossorigin src="/assets/index.DFpzRQg2.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime.QTnfLwEv.js">
+  <link rel="modulepreload" crossorigin href="/assets/framework.BTQirQJB.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-i18n.C1-1dNXk.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-router.YUHqddSK.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/dayjs.BHwonxou.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/pinia.CPXCB7Nr.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/@vueuse/motion.R6iBPCna.js">
+  <link rel="modulepreload" crossorigin href="/assets/theme.CCQGLXnh.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/nprogress.DHGjGeo5.js">
+  <link rel="stylesheet" crossorigin href="/assets/style.CNc88Rw_.css">
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.BQhdFMY1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.DMm9YOAa.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.Dq_IR9rO.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.BEiXGLvX.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.Di6jR-x-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.CTRA-rTL.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.CL6g_b3V.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.BsDP51OF.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.CTYiF6lA.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.Dxdc4cR9.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Cx986IdX.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Jm3AIy58.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.DxDJ3AOS.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.SpSLRI95.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.NWA7e6Wa.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.BMLOBm91.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.B22Nviop.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.Dr94JaBh.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.CZnvNsCZ.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.iY-2wyZ7.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.t53AETM-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.DA0__PXp.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.D1sUS0GD.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.DbIhKOiC.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.C3H0VqGB.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.DN2j7dab.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.DDBCnlJ7.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.CS6fqUqJ.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D3wIWfF6.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D5yQViql.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.C195tn64.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.oD1tc_U0.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size3-Regular.CTq5MqoE.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.Dl5lxZxV.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.BF-4gkZK.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.CO6r4hn1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.C0xS9mPB.woff" as="font" type="font/woff" crossorigin>
+<link rel="modulepreload" crossorigin href="/assets/theme.CCQGLXnh.js">
+<link rel="preload" href="/assets/none.DLM1AMsD.jpg" as="image">
+<link rel="preload" href="/assets/bg-img.kXdNMxcF.jpg" as="image">
+<link rel="preload" href="/assets/sidebar-bg-img.mp54gEws.webp" as="image">
+<link rel="modulepreload" crossorigin href="/assets/mc.CKN88F1o.js">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MC 从0—&quot;∞&quot; - 鹤白居的小站</title>
+<script src="//sdk.51.la/js-sdk-pro.min.js" id="LA_COLLECT"></script>
+<script>LA.init({id:"3Ny1uac0PW8pSlg2",ck:"3Ny1uac0PW8pSlg2",autoTrack:true,screenRecord:true})</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap">
+<meta property="og:locale:alternate" content="en">
+<meta name="description" content="鹤白居的个人博客，记录生活与学习。">
+<meta property="og:description" content="鹤白居的个人博客，记录生活与学习。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:site_name" content="鹤白居的小站">
+<meta property="og:title" content="MC 从0—&quot;∞&quot;">
+<meta property="og:image" content="https://www.yunyoujun.cn/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.hebaiju.cn/">
+<link rel="icon" href="https://www.yunyoujun.cn/favicon.svg" type="image/svg+xml">
+<meta name="generator" content="Valaxy 0.28.11">
+<meta name="theme-color" content="#fff">
+<meta name="msapplication-TileColor" content="#fff">
+<meta name="msvalidate.01" content="EA9C98A06345CF7B6593927ACED6972A">
+<meta name="google-site-verification" content="fC0ym4s5be3XuqTS29SR1kSdNEyZQaYrWc_tynK67kE">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <div id="app"><!--[--><!--[--><!--[--><!----><!----><div class="yun-page-header-gradient"></div><div class="yun-nav-menu z-$yun-z-nav-menu fixed bg-transparent" data-v-f6b5dd64><div class="inline-flex justify-start items-center flex-1" data-v-f6b5dd64><button type="button" class="vt-hamburger menu-btn sidebar-toggle leading-4 size-12 lg:hidden" aria-label="mobile navigation" aria-expanded="false" inline-flex cursor="pointer" hover="bg-white/80 dark:bg-black/80" z="$yun-z-menu-btn" data-v-f6b5dd64><span class="vt-hamburger-container"><span class="vt-hamburger-top"></span><span class="vt-hamburger-middle"></span><span class="vt-hamburger-bottom"></span></span></button><a href="/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 data-v-f6b5dd64><!--[--><div class="size-6 i-ri-home-4-line"></div><!--]--></a><div class="hidden lg:contents" data-v-f6b5dd64><!--[--><a href="/posts/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="文章" data-v-f6b5dd64><!--[--><div class="size-6 i-ri-article-line"></div><!--]--></a><a href="/projects/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="项目" data-v-f6b5dd64><!--[--><div class="size-6 i-ri:box-3-fill"></div><!--]--></a><a href="/collections/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="合集" data-v-f6b5dd64><!--[--><div class="size-6 i-ri-book-2-line"></div><!--]--></a><!--]--></div></div><div class="flex flex-1 flex-center" data-v-f6b5dd64><div flex="~ center col h-full" class="nav-menu-title-container cursor-pointer" data-v-f6b5dd64><!----><span class="font-light truncate">鹤白居的小站</span></div></div><div class="inline-flex-center justify-end items-center flex-1" data-v-f6b5dd64><button class="yun-icon-btn rounded-none! hidden sm:inline-flex" title="切换语言" style="color:var(--va-c-text);" data-v-f6b5dd64><div i-ri-translate class="transition transform"></div></button><button class="yun-icon-btn yun-toggle-dark rounded-none!" title="切换深色模式" data-v-f6b5dd64><div i="ri-sun-line dark:ri-moon-line"></div></button><!--[--><button class="yun-search-btn yun-icon-btn popup-trigger rounded-none! size-12 inline-flex justify-center items-center" text="xl $va-c-text" title="搜索"><div i-ri-search-line op-80 hover="op-100"></div></button><!----><!--]--></div></div><!----><!----><!----><!--[--><div class="yun-bg"></div><!--]--><!----><a href="#" class="back-to-top yun-icon-btn bg-$va-c-bg-soft shadow-md"><div class="size-8" i-ri-arrow-up-s-line></div><svg class="progress-circle-container" viewBox="0 0 100 100"><circle stroke-dasharray="301.59289474462014 301.59289474462014" stroke-dashoffset="301.59289474462014" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="progress-circle" cx="50" cy="50" r="48" fill="none"></circle></svg></a><!--]--><!--[--><!--]--><!----><!--]--><div class="min-h-screen flex flex-col"><div class="mt-12 md:mt-24 yun-layout-wrapper__content"><!--[--><div class="yun-layout-left gap-4 sticky top-$yun-margin-top w-80"><!--[--><div class="yun-card flex-center rounded-2 overflow-hidden collection p-4 justify-start items-start" flex="~ col gap-1" min-h="100px" bg="$va-c-bg-light"><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center"><!--[--><section class="yun-sidebar-item w-full"><a aria-current="page" href="/collections/mc/" class="router-link-active router-link-exact-active title">MC 从零到无穷</a><div class="items"><!--[--><div class="item"><div class="indicator"></div><a href="/collections/mc/mc01" class=""><p class="text">第一章：PC让你成功地进入游戏</p></a></div><div class="item"><div class="indicator"></div><a href="/collections/mc/mc02" class=""><p class="text">第二章：手机版让你成功进入游戏</p></a></div><!--]--></div></section><!--]--></div><!----></div><!--]--></div><main class="yun-main lt-md:w-full" flex="~ center"><!--[--><div class="content w-full md:w-3xl lg:w-2xl xl:w-2xl 2xl:w-4xl" flex="~ col grow" p="lt-md:0"><div class="yun-card flex-center rounded-2 overflow-hidden" flex="col" min-h="100px" bg="$va-c-bg-light" m="0"><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center"><!--[--><!----><div class="mt-8 mb-4"><!--[--><header class="post-header"><h1 p="2" text="2xl center" font="serif black" style="color:" class="post-title flex-center"><!----><span inline-flex class="leading-none">MC 从0—&quot;∞&quot;</span></h1></header><!--]--></div><!--[--><!--[--><!----><!--[--><!--[--><!----><div flex="~ center" text="sm" class="post-meta-col post-meta gap-4"><div class="post-time flex items-center gap-4"><span class="posted-time inline-flex-center gap-1"><div class="inline-block" i-ri-calendar-line></div><span class="op-80">发表于</span><time class="op-80">2026-09-02</time></span><!----></div><!--[--><!--]--><div class="inline-flex-center gap-4"><!----><div class="inline-flex gap-4" text="sm" h="5"><!----><!----></div><!----></div></div><!--]--><!----><div class="inline-flex mt-2" text="sm" py="1"><!----><!----><!----></div><!--]--><!--]--><!--]--><div p="x-4 b-8" class="sm:px-6 lg:px-12 xl:px-16" w="full"><!--[--><!--]--><!--[--><article class="markdown-body"><!--[--><!----><!----><!--[--><!--]--><!--[--><blockquote><p>本教程将教你从0基础不懂任何“MC玩家”→变成“MC大佬”。 这个合集叫「从零到无穷」，路线全程铺好，跟着走就行。</p></blockquote><h2 id="这个系列写给谁" tabindex="-1">这个系列写给谁 <a class="header-anchor" href="#这个系列写给谁" aria-label="Permalink to &quot;这个系列写给谁&quot;">​</a></h2><ul><li><strong>零基础新人</strong>：没碰过 MC、或者刚听说想入坑——从第一章开始照着做，装好游戏、成功走进自己的世界</li><li><strong>有基础的玩家</strong>：已经会玩，想加模组、联机、进服务器——按左侧目录直接跳到需要的章节</li><li><strong>高级读者</strong>：想弄懂模组原理、自己动手写模组——后面的模组开发部分会从头讲起，不会突然劝退</li></ul><h2 id="视频教程相结合" tabindex="-1">视频教程相结合 <a class="header-anchor" href="#视频教程相结合" aria-label="Permalink to &quot;视频教程相结合&quot;">​</a></h2><ul><li>我将会和视频教程相结合来进行一步一步进行标注，保证稳定的来完成</li></ul><h2 id="为什么写这个系列" tabindex="-1">为什么写这个系列 <a class="header-anchor" href="#为什么写这个系列" aria-label="Permalink to &quot;为什么写这个系列&quot;">​</a></h2><p>目前的网络环境对新人不算友好：</p><ul><li><strong>资源冗杂</strong>：下载站、广告、捆绑安装混杂，很难找到正确的东西</li><li><strong>教程虽多，坑也多</strong>：很多配置教程只讲一半，或者版本过时，照着做总会在某个环节卡住</li></ul><p>所以有了这个合集：一套从零开始、步骤完整、跟着做就能成功的教程，并且会一直写下去。</p><h2 id="系列路线图" tabindex="-1">系列路线图 <a class="header-anchor" href="#系列路线图" aria-label="Permalink to &quot;系列路线图&quot;">​</a></h2><ol><li><strong>装好游戏</strong>：安装 Java 环境 → 安装启动器 → 成功进入游戏</li><li><strong>正常游玩</strong>：单人游戏入门；讲清楚<strong>正版账号 / 离线账号</strong>的区别与选择</li><li><strong>多人游戏</strong>：进服务器、和朋友联机</li><li><strong>开服</strong>：成为一个MC腐竹</li><li><strong>模组之路</strong>：模组的使用与添加，最后到<strong>模组开发</strong></li></ol><p>每完成一步都有一个明确的结果，不会学着学着不知道自己在哪。</p><h2 id="开始之前-你需要准备" tabindex="-1">开始之前，你需要准备 <a class="header-anchor" href="#开始之前-你需要准备" aria-label="Permalink to &quot;开始之前，你需要准备&quot;">​</a></h2><ul><li><strong>一台电脑</strong>：对配置没什么要求，Windows 7 / 10 / 11 都可以，本系列以 <strong>Windows 11</strong> 演示</li><li><strong>能联网</strong>：下载 Java、启动器和游戏资源都需要</li><li><strong>前期不需要</strong>：编程基础和正版账号。到模组开发部分会需要一点 Java 编程，到时候会从头讲</li></ul><h2 id="关于游戏版本" tabindex="-1">关于游戏版本 <a class="header-anchor" href="#关于游戏版本" aria-label="Permalink to &quot;关于游戏版本&quot;">​</a></h2><p>Minecraft Java 版更新很频繁，本教程基于 <strong>【java-26.2】</strong> 编写（更新于 2026-9-1）。不同版本界面和部分设置会有差异，但整体流程一致，遇到不一样的地方以教程思路为准。</p><h2 id="怎么使用这个系列" tabindex="-1">怎么使用这个系列 <a class="header-anchor" href="#怎么使用这个系列" aria-label="Permalink to &quot;怎么使用这个系列&quot;">​</a></h2><ul><li>新人按左侧目录<strong>从上往下</strong>照着做，不要跳步——每一步都是下一步的地基</li><li>有基础的读者按需跳读即可</li><li>每章末尾都有「常见问题」，出问题先去那里找</li><li>还是解决不了？在本页评论区留言，把报错信息或截图发出来即可</li></ul><!--]--><!--]--><!----><!----></article><!--]--><!--[--><!--[--><!--[--><!----><ul class="post-copyright" m="y-4"><li class="post-copyright-author"><strong>本文作者：</strong><span>HEBAIJU</span></li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://www.hebaiju.cn/collections/mc" target="_blank" title="本文链接">https://www.hebaiju.cn/collections/mc</a></li><li class="post-copyright-license"><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 ">CC BY-NC-SA</a> 许可协议。</span></li></ul><!--]--><!--]--><!--]--></div><!--]--></div><!----></div><!--[--><!--]--><!--[--><div class="post-nav"><div class="post-nav-item"><!----></div><div class="post-nav-item"><a href="/posts/260408-blog-msg" class="post-nav-next" title="为博客添加 Waline 评论系统"><span class="title truncate" text="sm">为博客添加 Waline 评论系统</span><div class="icon" i-ri-arrow-right-s-line></div></a></div></div><!--]--><!--[--><!--]--><!--[--><div class="yun-card flex-center rounded-2 overflow-hidden comment yun-comment sm:p-6 lg:px-12 xl:px-16" flex="col" min-h="100px" bg="$va-c-bg-light" w="full" p="4"><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center"><!--[--><!----><!--]--></div><!----></div><!--]--><template class="mt-4 lg:hidden"></template><!--[--><!--]--><!--[--><!--]--></div><!--]--></main><!--[--><button class="xl:hidden toc-btn shadow-md fixed yun-icon-btn z-20 bg-$va-c-bg-soft" opacity="75" right="4" bottom="19"><div i-ri-file-list-line></div></button><!----><aside flex="~ col" class="va-card yun-aside min-h-sm rounded-2" text="center" overflow="auto"><div class="w-full" flex="~ col" pb-2><!--[--><div class="yun-aside-tabs w-full" p="x-4 t-4" flex="~ gap-2"><button class="active yun-aside-tab"> 文章目录 </button><button class="yun-aside-tab"> 章节目录 </button></div><div style=""><!--[--><h2 m="t-4 b-2" font="serif black"> 文章目录 </h2><div style="display:none;" data-v-134607ee><div class="content" data-v-134607ee><div class="outline-title" data-v-134607ee>本页</div><div class="outline-marker" data-v-134607ee></div><nav aria-labelledby="doc-outline-aria-label" data-v-134607ee><span id="doc-outline-aria-label" class="visually-hidden" data-v-134607ee> Table of Contents for current page </span><ul class="root va-toc relative z-1 css-i18n-toc" data-v-134607ee data-v-9d599344><!--[--><!--]--></ul></nav></div></div><!--]--></div><div style="display:none;"><h2 m="t-4 b-2" font="serif black"> 章节目录 </h2><section class="yun-sidebar-item w-full text-left" p="x-4"><a aria-current="page" href="/collections/mc/" class="router-link-active router-link-exact-active title">MC 从零到无穷</a><div class="items"><!--[--><div class="item"><div class="indicator"></div><a href="/collections/mc/mc01" class=""><p class="text">第一章：PC让你成功地进入游戏</p></a></div><div class="item"><div class="indicator"></div><a href="/collections/mc/mc02" class=""><p class="text">第二章：手机版让你成功进入游戏</p></a></div><!--]--></div></section></div><!--]--><div class="flex-grow"></div><!----></div></aside><!--]--><!--]--></div><footer flex="~ col" class="relative yun-footer va-footer px-4 py-4 pt-0 text-$va-c-text-light w-full mt-14" bg="white dark:$va-c-bg-soft" text="center sm"><div class="yun-cloud absolute top--10 left-0 right-0"><svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" fill="var(--yun-c-cloud)"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><div class="beian" m="y-2"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">蜀ICP备2026019341号</a><!----></div><div class="copyright flex justify-center items-center gap-2" p="1"><span> © <!--[-->2025 - <!--]--> 2026</span><a class="animate-pulse inline-flex" href="https://www.yunyoujun.cn/sponsors/" target="_blank" title="Sponsor YunYouJun"><div class="i-ri-cloud-line"></div></a><span>HEBAIJU</span></div><div class="powered" m="2"><span>由 <a href="https://github.com/YunYouJun/valaxy.git" target="_blank" rel="noopener">Valaxy</a> <span class="op-60">v0.28.11</span> 驱动</span><span mx-1>|</span><span><span>主题</span><span mx-1>-</span><a href="https://github.com/YunYouJun/valaxy.git" title="valaxy-theme-yun" target="_blank">Yun</a><span class="ml-1 op-60">v0.28.11</span></span></div><!--[--><!--]--><div class="yun-footer-gradient"></div></footer></div><!--]--></div><script>window.__INITIAL_STATE__='{"pinia":{"yun-app":{"bannerAnimationDone":false},"app":{"showLoading":true},"site":{},"routerStore":{}}}'</script><script type="application/ld+json" data-hid="schema-org-graph">{"@context":"https://schema.org","@graph":[{"@id":"https://www.hebaiju.cn/#identity","@type":"Person","name":"HEBAIJU","url":"https://www.hebaiju.cn/","image":{"@id":"https://www.hebaiju.cn/#/schema/image/1"},"sameAs":["/atom.xml","https://github.com/Hebaiju","https://space.bilibili.com/3546981114841718","mailto:wbix@qq.com"]},{"@id":"https://www.hebaiju.cn/#website","@type":"WebSite","dateModified":"2026-09-02T11:59:02.252Z","datePublished":"2026-09-02T11:59:02.252Z","inLanguage":"zh-CN","name":"MC 从0—\"∞\"","url":"https://www.hebaiju.cn/","publisher":{"@id":"https://www.hebaiju.cn/#identity"}},{"@id":"https://www.hebaiju.cn/#webpage","@type":"WebPage","description":"鹤白居的个人博客，记录生活与学习。","name":"MC 从0—\"∞\"","url":"https://www.hebaiju.cn/","about":{"@id":"https://www.hebaiju.cn/#identity"},"isPartOf":{"@id":"https://www.hebaiju.cn/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://www.hebaiju.cn/"]}]},{"@id":"https://www.hebaiju.cn/#/schema/image/1","@type":"ImageObject","contentUrl":"https://pic1.imgdb.cn/i/0342Dcg6IjPPIQZ6OcaxBw.jpg","inLanguage":"zh-CN","url":"https://pic1.imgdb.cn/i/0342Dcg6IjPPIQZ6OcaxBw.jpg"}]}</script>
+  
+</body>
+</html>

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2160" viewBox="0 0 3840 2160">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e96f0"/>
+      <stop offset="0.65" stop-color="#7faff7"/>
+      <stop offset="1" stop-color="#a9ccfb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 天空 -->
+  <rect width="3840" height="2160" fill="url(#sky)"/>
+
+  <!-- 方形太阳（MC 标志） -->
+  <g shape-rendering="crispEdges">
+    <rect x="3060" y="96" width="448" height="448" fill="#fff9c4" opacity="0.4"/>
+    <rect x="3132" y="168" width="304" height="304" fill="#fff176"/>
+    <rect x="3180" y="216" width="208" height="208" fill="#fffde7"/>
+  </g>
+
+  <!-- 像素方块云 -->
+  <g fill="#ffffff" shape-rendering="crispEdges">
+    <rect x="384" y="288" width="640" height="128" opacity="0.92"/>
+    <rect x="528" y="224" width="352" height="96" opacity="0.92"/>
+    <rect x="2000" y="400" width="512" height="96" opacity="0.88"/>
+    <rect x="2112" y="336" width="288" height="80" opacity="0.88"/>
+    <rect x="128" y="560" width="320" height="80" opacity="0.75"/>
+  </g>
+
+  <!-- 远处方块丘陵 -->
+  <g shape-rendering="crispEdges">
+    <rect x="0" y="1568" width="1120" height="64" fill="#7cbd4b"/>
+    <rect x="0" y="1632" width="1120" height="128" fill="#8a5f3d"/>
+    <rect x="2880" y="1632" width="960" height="64" fill="#7cbd4b"/>
+    <rect x="2880" y="1696" width="960" height="64" fill="#8a5f3d"/>
+  </g>
+
+  <!-- 前景地面 -->
+  <g shape-rendering="crispEdges">
+    <rect x="0" y="1760" width="3840" height="64" fill="#7cbd4b"/>
+    <rect x="0" y="1824" width="3840" height="336" fill="#9b6a43"/>
+    <!-- 泥土噪点 -->
+    <g fill="#7d5334">
+      <rect x="224" y="1888" width="32" height="32"/>
+      <rect x="544" y="1984" width="32" height="32"/>
+      <rect x="928" y="1904" width="32" height="32"/>
+      <rect x="1312" y="2000" width="32" height="32"/>
+      <rect x="1696" y="1872" width="32" height="32"/>
+      <rect x="2080" y="1984" width="32" height="32"/>
+      <rect x="2432" y="1888" width="32" height="32"/>
+      <rect x="2816" y="2000" width="32" height="32"/>
+      <rect x="3200" y="1904" width="32" height="32"/>
+      <rect x="3520" y="1984" width="32" height="32"/>
+    </g>
+    <g fill="#b58357">
+      <rect x="384" y="2048" width="32" height="32"/>
+      <rect x="1056" y="2064" width="32" height="32"/>
+      <rect x="1800" y="2064" width="32" height="32"/>
+      <rect x="2600" y="2050" width="32" height="32"/>
+      <rect x="3360" y="2064" width="32" height="32"/>
+    </g>
+  </g>
+
+  <!-- 像素橡树 -->
+  <g shape-rendering="crispEdges">
+    <rect x="3040" y="1184" width="128" height="640" fill="#7a5230"/>
+    <rect x="3064" y="1184" width="24" height="640" fill="#5f3f24"/>
+    <rect x="3136" y="1184" width="24" height="640" fill="#5f3f24"/>
+    <rect x="2800" y="832" width="416" height="128" fill="#61ab42"/>
+    <rect x="2720" y="928" width="576" height="192" fill="#4e8f34"/>
+    <rect x="2784" y="1088" width="448" height="112" fill="#3c7528"/>
+    <g fill="#3c7528">
+      <rect x="2800" y="960" width="32" height="32"/>
+      <rect x="3000" y="1050" width="32" height="32"/>
+      <rect x="3200" y="980" width="32" height="32"/>
+      <rect x="2860" y="1080" width="32" height="32"/>
+    </g>
+    <g fill="#61ab42">
+      <rect x="2950" y="950" width="32" height="32"/>
+      <rect x="3150" y="1040" width="32" height="32"/>
+    </g>
+  </g>
+
+  <!-- 苦力怕（Creeper） -->
+  <g shape-rendering="crispEdges">
+    <rect x="720" y="1040" width="384" height="384" fill="#4faf4e"/>
+    <g fill="#3f8f3f">
+      <rect x="752" y="1072" width="32" height="32"/>
+      <rect x="1000" y="1088" width="32" height="32"/>
+      <rect x="780" y="1320" width="32" height="32"/>
+      <rect x="1050" y="1360" width="32" height="32"/>
+    </g>
+    <g fill="#66c266">
+      <rect x="880" y="1060" width="32" height="32"/>
+      <rect x="740" y="1200" width="32" height="32"/>
+      <rect x="1020" y="1260" width="32" height="32"/>
+      <rect x="920" y="1400" width="32" height="32"/>
+    </g>
+    <!-- 经典 8x8 苦力怕脸 -->
+    <g fill="#1a1a1a">
+      <rect x="768" y="1136" width="96" height="96"/>
+      <rect x="960" y="1136" width="96" height="96"/>
+      <rect x="864" y="1232" width="96" height="48"/>
+      <rect x="816" y="1280" width="192" height="96"/>
+      <rect x="816" y="1376" width="48" height="48"/>
+      <rect x="960" y="1376" width="48" height="48"/>
+    </g>
+  </g>
+
+  <!-- 主角：2.5D 草方块 -->
+  <g shape-rendering="crispEdges">
+    <polygon points="1568,832 1728,672 2432,672 2272,832" fill="#8fd05a"/>
+    <polygon points="2272,832 2432,672 2432,1376 2272,1536" fill="#7f5636"/>
+    <rect x="1568" y="832" width="704" height="704" fill="#9b6a43"/>
+    <rect x="1568" y="832" width="704" height="96" fill="#7cbd4b"/>
+    <!-- 草皮垂边 -->
+    <g fill="#6fb045">
+      <rect x="1616" y="928" width="40" height="40"/>
+      <rect x="1824" y="928" width="40" height="40"/>
+      <rect x="2032" y="928" width="40" height="40"/>
+      <rect x="2200" y="928" width="40" height="40"/>
+    </g>
+    <!-- 正面泥土噪点 -->
+    <g fill="#7d5334">
+      <rect x="1632" y="1024" width="48" height="48"/>
+      <rect x="1856" y="1136" width="48" height="48"/>
+      <rect x="2080" y="1248" width="48" height="48"/>
+      <rect x="1664" y="1376" width="48" height="48"/>
+      <rect x="1984" y="1424" width="48" height="48"/>
+      <rect x="2176" y="1312" width="48" height="48"/>
+      <rect x="1776" y="1216" width="48" height="48"/>
+    </g>
+    <g fill="#b58357">
+      <rect x="1920" y="992" width="48" height="48"/>
+      <rect x="2112" y="1456" width="48" height="48"/>
+      <rect x="1648" y="1472" width="48" height="48"/>
+    </g>
+    <!-- 顶面草噪点 -->
+    <g fill="#6fb045">
+      <rect x="1856" y="736" width="48" height="48"/>
+      <rect x="2100" y="776" width="48" height="48"/>
+      <rect x="1960" y="816" width="48" height="48"/>
+    </g>
+  </g>
+
+  <!-- 标题（双层描边 + 硬阴影，方块感） -->
+  <text x="1932" y="442" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="230" font-weight="900" fill="#303030" text-anchor="middle">MC 从零到无穷</text>
+  <text x="1920" y="430" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="230" font-weight="900" fill="#ffffff" stroke="#303030" stroke-width="10" paint-order="stroke" text-anchor="middle">MC 从零到无穷</text>
+  <text x="1926" y="566" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="100" font-weight="700" fill="#303030" opacity="0.55" text-anchor="middle">从安装游戏到模组开发</text>
+  <text x="1920" y="560" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="100" font-weight="700" fill="#ffffff" opacity="0.95" text-anchor="middle">从安装游戏到模组开发</text>
+</svg>
