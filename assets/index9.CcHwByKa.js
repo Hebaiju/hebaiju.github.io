@@ -1,0 +1,1 @@
+import{q as e}from"./theme.Bola9xR2.js";var t=e({cast(e){return typeof e==`string`?{url:e}:e},defaults:{"@type":`VirtualLocation`}});export{t as virtualLocationResolver};

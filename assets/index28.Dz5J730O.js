@@ -1,0 +1,1 @@
+import{q as e}from"./theme.Bola9xR2.js";var t=e({defaults:{"@type":`PostalAddress`}});export{t as addressResolver};
